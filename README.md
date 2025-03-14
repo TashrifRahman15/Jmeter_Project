@@ -63,4 +63,4 @@ After doing a load test for 20 minutes, Gradually increased the load in steps un
 - Ensure the CSV files (deposit.csv, sendMoney.csv, payment.csv) are placed in the same directory.
 - Run the test and validate the response assertions.
 ##  Notes
-dmoney.jtl and the HTML report folder are excluded from GitHub using .gitignore.
+booking.jtl dmoney.jtl and the HTML report folder are excluded from GitHub using .gitignore.
