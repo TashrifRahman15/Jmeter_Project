@@ -1,7 +1,7 @@
 # JMeter Performance Testing
 ## Project Overview
 This project contains JMeter performance test collections for two scenarios:
-## Performance Testing for Booking API
+##  Task1 Performance Testing for Booking API
 In the scenario Total user: 120000 and Time Period: 12 hours = 12 * 60 * 60 seconds = 43,200 seconds
 Throughput (Requests per Second): 120,000 users / 43,200 seconds ≈ 2.78 requests/second
 ##### Conducted tests in 3 steps:
@@ -42,18 +42,25 @@ After doing a load test for 20 minutes, Gradually increased the load in steps un
 ## load test and stress test from the excel file
 [booking-api-test-report.xlsx](https://github.com/user-attachments/files/19252854/booking-api-test-report.xlsx)
 
-
-
-
+# Task 2: Functional Testing for DMoney API
+### Summary report
+![task2](https://github.com/user-attachments/assets/21ea7aad-db40-4c6e-ae6d-7d94dfc6fd12)
+### HTML Report
+![task2html](https://github.com/user-attachments/assets/e5c290f1-bf04-4e10-abe0-63a501726e8c)
 
 ## Prerequisites
 - Apache JMeter (latest version recommended)
 - Java 8 or later
 - Clone this repository from GitHub
 ## How to run?
-- Clone this project
-- Collect .env from developer and put on the source root folder
-- Hit following command:
-  - ``` npm i ```
-  - ``` npm test ```
-- Report will be generated in Reports folder!
+#### Task 1: Running the Booking API Load & Stress Tests
+- Open Apache JMeter.
+- Load the booking.jmx file.
+- Run the test for the required duration.
+- View results in the HTML report folder.
+####  Task 2: Running the DMoney API Test
+- Load the dmoney.jmx file in JMeter.
+- Ensure the CSV files (deposit.csv, sendMoney.csv, payment.csv) are placed in the same directory.
+- Run the test and validate the response assertions.
+##  Notes
+dmoney.jtl and the HTML report folder are excluded from GitHub using .gitignore.
